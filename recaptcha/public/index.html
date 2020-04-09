@@ -11,8 +11,8 @@
         <br/>
         <div id=main>
             <form id="comment_form" action='/submit' method="post">
-                ID : <input type="email" placeholder="Type your email" size="40"><br><br>
-                PW : <input type="pw" placeholder="Type your password" size="40"><br><br>
+                ID : <input type="email" placeholder="Type your email" size="40" name="email"><br><br>
+                PW : <input type="text" placeholder="Type your password" size="40" name="pw"><br><br>
                 <div class="g-recaptcha" data-sitekey="6Lec_uYUAAAAAHzuv5vkJrBaAMLStbdBHYU1bioM"></div>
                 <input type="submit" name="submit" value="Post comment"><br><br>
             </form>
@@ -35,7 +35,7 @@
                             //     email, pw
                             // }
                             // $.post('/home', send_param, function(returnData){
-
+                                
                             // });
                         }else{
                             alert("로그인 다시해");
